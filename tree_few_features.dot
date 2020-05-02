@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="CDRSB <= -0.663\ngini = 0.667\nsamples = 100.0%\nvalue = [0.333, 0.333, 0.333]"] ;
+1 [label="RAVLT_immediate <= 0.61\ngini = 0.115\nsamples = 31.5%\nvalue = [0.939, 0.053, 0.008]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.188\nsamples = 12.5%\nvalue = [0.897, 0.083, 0.019]"] ;
+1 -> 2 ;
+3 [label="gini = 0.064\nsamples = 19.0%\nvalue = [0.967, 0.033, 0.0]"] ;
+1 -> 3 ;
+4 [label="CDRSB <= 0.187\ngini = 0.55\nsamples = 68.5%\nvalue = [0.055, 0.462, 0.483]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="CDRSB <= -0.322\ngini = 0.363\nsamples = 36.8%\nvalue = [0.102, 0.783, 0.115]"] ;
+4 -> 5 ;
+6 [label="gini = 0.293\nsamples = 23.8%\nvalue = [0.15, 0.827, 0.023]"] ;
+5 -> 6 ;
+7 [label="gini = 0.426\nsamples = 13.0%\nvalue = [0.015, 0.703, 0.282]"] ;
+5 -> 7 ;
+8 [label="CDRSB <= 0.77\ngini = 0.165\nsamples = 31.8%\nvalue = [0.001, 0.09, 0.909]"] ;
+4 -> 8 ;
+9 [label="gini = 0.324\nsamples = 12.5%\nvalue = [0.003, 0.199, 0.798]"] ;
+8 -> 9 ;
+10 [label="gini = 0.036\nsamples = 19.3%\nvalue = [0.0, 0.019, 0.981]"] ;
+8 -> 10 ;
+}

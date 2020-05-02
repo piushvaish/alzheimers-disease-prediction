@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="CDRSB_bl <= -0.728\ngini = 0.642\nsamples = 100.0%\nvalue = [0.309, 0.455, 0.236]"] ;
+1 [label="Years_bl <= 0.021\ngini = 0.17\nsamples = 29.6%\nvalue = [0.908, 0.071, 0.021]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.038\nsamples = 16.8%\nvalue = [0.98, 0.018, 0.001]"] ;
+1 -> 2 ;
+3 [label="gini = 0.317\nsamples = 12.8%\nvalue = [0.813, 0.141, 0.046]"] ;
+1 -> 3 ;
+4 [label="CDRSB_bl <= 0.88\ngini = 0.51\nsamples = 70.4%\nvalue = [0.057, 0.617, 0.326]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="ST29SV_UCSFFSX_11_02_15_UCSFFSX51_08_01_16 <= 0.235\ngini = 0.416\nsamples = 55.2%\nvalue = [0.071, 0.736, 0.193]"] ;
+4 -> 5 ;
+6 [label="Month_bl <= 0.047\ngini = 0.502\nsamples = 25.4%\nvalue = [0.052, 0.625, 0.323]"] ;
+5 -> 6 ;
+7 [label="gini = 0.433\nsamples = 12.8%\nvalue = [0.03, 0.704, 0.266]"] ;
+6 -> 7 ;
+8 [label="gini = 0.552\nsamples = 12.6%\nvalue = [0.074, 0.545, 0.381]"] ;
+6 -> 8 ;
+9 [label="Years_bl <= -0.444\ngini = 0.295\nsamples = 29.7%\nvalue = [0.088, 0.831, 0.081]"] ;
+5 -> 9 ;
+10 [label="gini = 0.196\nsamples = 16.4%\nvalue = [0.061, 0.893, 0.045]"] ;
+9 -> 10 ;
+11 [label="gini = 0.401\nsamples = 13.3%\nvalue = [0.121, 0.754, 0.125]"] ;
+9 -> 11 ;
+12 [label="gini = 0.308\nsamples = 15.2%\nvalue = [0.006, 0.183, 0.811]"] ;
+4 -> 12 ;
+}
